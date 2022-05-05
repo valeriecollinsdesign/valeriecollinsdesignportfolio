@@ -1,0 +1,80 @@
+/*colors used : 
+primary - apple core: hex -#dcc7aa, rgb - 220,199,170
+secondary - blueberry: hex- #6b7a8f, rgb - 107,122,143
+accent colors: apricot-  hex - # f7882f, rgb - 247,136,47 and citrus - hex# - f7c331 rgb - 247,195, 49 */
+
+body,.hero-text {
+background-color: rgb(220, 199, 170, 0.3);
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px; /* Sets the font size to 16px */
+font-weight: 300; /* Sets the font weight to 300 */
+line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+color: #4a4a4a;
+}
+.hero-text {
+    text-align: center;
+}
+img {
+    border-radius: 25%;
+}
+h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+  image {
+      width: 100%;
+  }
+  a {
+    color: #6b7a8f;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover,
+  a:focus {
+    color: #f7882f;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+a:visited {
+    color:#6b7a8f
+}
+a:active {
+    color:#f7c331
+}
+.button,
+.button:hover {
+    display: inline-block;
+    background-color: #dcc7aa;
+    color: #6b6b6b;;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid ##994c30;
+    transition: 0.2s opacity;
+}
+.button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+  .button.contact:hover {
+      background-color: transparent;
+      color:#dcc7aa;
+      text-transform: uppercase;
+      border: 2px solid;
+  }
