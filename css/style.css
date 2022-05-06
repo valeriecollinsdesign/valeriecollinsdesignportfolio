@@ -3,7 +3,7 @@ primary - apple core: hex -#dcc7aa, rgb - 220,199,170
 secondary - blueberry: hex- #6b7a8f, rgb - 107,122,143
 accent colors: apricot-  hex - # f7882f, rgb - 247,136,47 and citrus - hex# - f7c331 rgb - 247,195, 49 */
 
-body,.hero-text {
+body {
 background-color: rgb(220, 199, 170, 0.3);
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -16,7 +16,7 @@ color: #4a4a4a;
     text-align: center;
 }
 img {
-    border-radius: 25%;
+    border-radius: 5%;
 }
 h1, h2, h3, h4 {
     line-height: 1.4;
@@ -39,7 +39,7 @@ h1, h2, h3, h4 {
     font-size: 1.35em;
     font-weight: 400;
   }
-  image {
+  img {
       width: 100%;
   }
   a {
@@ -65,7 +65,7 @@ a:active {
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid ##994c30;
+    border-bottom: 2px solid #994c30;
     transition: 0.2s opacity;
 }
 .button:hover {
