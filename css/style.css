@@ -1,7 +1,10 @@
 /*colors used : 
 primary - apple core: hex -#dcc7aa, rgb - 220,199,170
 secondary - blueberry: hex- #6b7a8f, rgb - 107,122,143
-accent colors: apricot-  hex - # f7882f, rgb - 247,136,47 and citrus - hex# - f7c331 rgb - 247,195, 49 */
+accent colors: apricot-  hex - # f7882f, rgb - 247,136,47 and oxblood - hex - #76323f */
+* {
+  box-sizing: border-box;
+}
 
 body {
 background-color: rgb(220, 199, 170, 0.3);
@@ -12,12 +15,11 @@ font-weight: 300; /* Sets the font weight to 300 */
 line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 color: #4a4a4a;
 }
-.hero-text {
-    text-align: center;
-}
-img {
-    border-radius: 5%;
-}
+
+/*header {
+  background-color: rgb(107, 122, 143,);
+}*/
+
 h1, h2, h3, h4 {
     line-height: 1.4;
   }
@@ -41,6 +43,7 @@ h1, h2, h3, h4 {
   }
   img {
       width: 100%;
+       border-radius: 02%;
   }
   a {
     color: #6b7a8f;
@@ -48,24 +51,24 @@ h1, h2, h3, h4 {
   }
   a:hover,
   a:focus {
-    color: #f7882f;
+    color: #6b7a8f;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
-a:visited {
+a:visited { /* visited link */
     color:#6b7a8f
 }
-a:active {
-    color:#f7c331
+a:active {  /* selected link */
+    color:#76323f
 }
 .button,
 .button:hover {
     display: inline-block;
-    background-color: #dcc7aa;
-    color: #6b6b6b;;
+    background-color: #d7cec7;
+    color: #6b7a8f;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #994c30;
+    border-bottom: 2px solid #4a4a4a;
     transition: 0.2s opacity;
 }
 .button:hover {
@@ -74,7 +77,92 @@ a:active {
   }
   .button.contact:hover {
       background-color: transparent;
-      color:#dcc7aa;
+      color:#6b7a8f;
       text-transform: uppercase;
       border: 2px solid;
   }
+  /* layout stylings */
+  
+  .container {
+    padding: 0 15px
+  }
+ 
+  #work h1 {
+    text-align: center;
+  }
+
+ #work h2{
+   padding-left: 10px;
+ } 
+
+#work p {
+  padding-left: 10px;
+}
+
+#work .row { 
+  padding-bottom: 25px; border-bottom: 1px solid   rgb(107, 122, 143, 0.3); 
+  }
+
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 2 left and right */
+  
+  }
+
+#hero h1 {
+  text-align: center; /*centers text */
+
+}
+
+.logo {
+  max-width: 250px ;
+  height: 70px;
+  width: 70px;
+  border-top-left-radius: 0px;
+}
+header {
+  background-color: rgb(107, 122, 143, 0.5);
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: inset -2px -3px 3px 0px  rgba(50, 50, 50, 0.1);
+  position: relative;
+}
+nav > ul { /*takes away the bullet points*/
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  color:#d7cec7
+}
+#hero {
+  background-color: rgb(107, 122, 143, );
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* footer styling */
+
+#contact {
+  text-align: center;
+}
+
+ footer p {
+   margin-top: 10px;
+ }
+#socialmedia {
+  size: 25px;
+}
+
+ 
+ 
