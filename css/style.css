@@ -16,10 +16,6 @@ line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 color: #4a4a4a;
 }
 
-/*header {
-  background-color: rgb(107, 122, 143,);
-}*/
-
 h1, h2, h3, h4 {
     line-height: 1.4;
   }
@@ -41,27 +37,28 @@ h1, h2, h3, h4 {
     font-size: 1.35em;
     font-weight: 400;
   }
+  /*setting images to full width - responsive*/
   img {
       width: 100%;
        border-radius: 02%;
   }
+  /*change the default link to my secondary color*/
   a {
     color: #6b7a8f;
     text-decoration: none; /* No underlining */
   }
   a:hover,
   a:focus {
-    color: #6b7a8f;
+    color: #565656;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 a:visited { /* visited link */
     color:#6b7a8f
 }
 a:active {  /* selected link */
-    color:#76323f
+    color:#6b7a8f
 }
-.button,
-.button:hover {
+.button {
     display: inline-block;
     background-color: #d7cec7;
     color: #6b7a8f;
@@ -75,22 +72,93 @@ a:active {  /* selected link */
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
   }
-  .button.contact:hover {
+  .button:active  {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+  .button.contact:hover { /*button rules for the mailto button */
       background-color: transparent;
       color:#6b7a8f;
       text-transform: uppercase;
       border: 2px solid;
   }
-  /* layout stylings */
-  
-  .container {
-    padding: 0 15px
+  .button.contact:hover {
+    background-color: #6b7a8f;
+    color: #dcc7aa
   }
- 
-  #work h1 {
+  .button.contact:active {
+    background-color: #dcc7aa;
+    color: #6b7a8f;
+  }
+  
+
+  header { /*styling the header elements */
+    background-color: rgb(107, 122, 143, 0.5);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    box-shadow: inset -2px -3px 3px 0px  rgba(50, 50, 50, 0.1);
+    
+  }
+  
+
+ header.logo {
+    max-width: 250px ;
+  }
+
+  /*navigation styling*/
+  nav  {
+    display: inline-block;
     text-align: center;
   }
 
+  nav > ul { /*takes away the bullet points*/
+    list-style-type: none;
+    padding: 0; 
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  nav > ul > li > a:visited {
+    color:#d7cec7
+  }
+
+ 
+  #hero {
+    background-color: rgb(107, 122, 143, );
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+
+   /* layout stylings */
+   selector {
+     float: right;
+   }
+
+  .container {
+    padding: 0 15px
+  }
+  #hero h1 {
+    text-align: center; /*centers text */
+  
+  }
+  #work h1 {
+    text-align: center;
+  }
+#work h3 {
+  padding: 10px;
+}
  #work h2{
    padding-left: 10px;
  } 
@@ -108,48 +176,12 @@ a:active {  /* selected link */
   
   }
 
-#hero h1 {
-  text-align: center; /*centers text */
 
-}
 
-.logo {
-  max-width: 250px ;
-  height: 70px;
-  width: 70px;
-  border-top-left-radius: 0px;
-}
-header {
-  background-color: rgb(107, 122, 143, 0.5);
-  text-align: center;
-  padding: 10px 0;
-  box-shadow: inset -2px -3px 3px 0px  rgba(50, 50, 50, 0.1);
-  position: relative;
-}
-nav > ul { /*takes away the bullet points*/
-  list-style-type: none;
-  padding: 0;
-  width: 100%;
-  
-}
-nav > ul > li {
-  display: inline-block;
-}
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-nav > ul > li > a:visited {
-  color:#d7cec7
-}
-#hero {
-  background-color: rgb(107, 122, 143, );
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
+
+
+
+
 
 /* footer styling */
 
@@ -160,9 +192,21 @@ nav > ul > li > a:visited {
  footer p {
    margin-top: 10px;
  }
-#socialmedia {
-  size: 25px;
-}
 
  
- 
+   /*styling the social icons*/
+
+   .social {
+    list-style-type: none;
+    padding: 0;
+    margin-left: -10px;
+  }
+  .social li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+   .social img {
+     height: 75px;
+     width: 75px;
+   }
