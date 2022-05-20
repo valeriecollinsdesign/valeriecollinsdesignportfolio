@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>About Me</title>
 </head>
-<body>
+<body id="about-page">
 <!--for the header-->
         <header>
             <!--for the navigation-->
@@ -19,9 +19,9 @@
                 <img class="logo" src="images/vc_logo_sample.png"  alt="Valerie Collins">
                 <nav>
                     <ul class="navigation">
-                        <li> <a href="index.html">Welcome</a></li>
-                            <li> <a href="aboutvaleriecollins.html">About</a></li>
-                                <li>  <a href="#contact">Contact</a></li>
+                        <li class="nav-link active-link"><a href="index.html">Welcome</a><div class="underline"></dvi></li>     
+                            <li class="nav-active-link"><a href="aboutvaleriecollins.html">About</a><div class="underline"></dvi></li>
+                                <li class="nav-active-link"><a href="#contact">Contact</a><div class="underline"></dvi></li>
                     </ul> 
                      </nav> 
     </div>
@@ -39,29 +39,32 @@
                 <source srcset="images/quadrock_timbertrail_val.jpg"  media="(max-width:767px)">
                 <img src="images/quadrock_timbertrail_val.jpg"  alt="a woman running trail">
             </picture>
-            <div class="container"><!--for my story and skills and tools sections-->
-                <div class="row"><!--colum one-->
+            <div class="row"><!--for my story and skills and tools sections-->
+                <div class="col-md-6"><!--colum one-->
                     <h2>Who I Am</h2>
                     <p>Hello! I am former Service Advisor with multiple accrediations to my name (Accredited Master Automotive Manager and ASE certified to name a few). I worked my way up from parts driver to 
                         accredited Service Advisor over the course of a few years. I devoted to improving myself as an advisor so I would be able to serve my customers and technicians more effectively. Through
-                        the accreditdation process I learned about effect customer service, how to run a project successfully and ethical buisness practices.</p>
+                        the accreditdation process I learned about effective customer service, how to run a project successfully and ethical business practices.</p>
 
                          <p>Though I enjoyed advocating for my customers and helping to successfully run a shop, at the end of the day I craved to explore
-                             my creativity. As a side hobby I have explored photography, with an emphasis on iphone photography as the camera technology has become increasingly advanced. While that satiated that creative outlet for a bit, I still wanted more. I wanted to build something and contribute 
-                             in a meaningful way. Enter UI design with a specialization in Front End Design. Through this medium I am able to create and contribute in a meaningful way. In addition, I will
+                             my creativity. As a side hobby I have explored photography, with an emphasis on iPhone photography as the camera technology has become increasingly advanced. While that satiated that creative outlet for a bit, I still wanted more. I wanted to build something and contribute 
+                             in a meaningful way. Enter UI design with a specialization in Front End Design. Through this medium I am able to create and contribute in a meaningful way. In addition, I can
                              also utilize my skillset for effective project management and ethical buisness practices. 
                          </p>
                          <p> When I am not designing, you can find me continuing the life-long practice of yoga and mindfulness. The yoga and mindfulness helps center me for the mountain ultra marathons I enjoy doing. I enjoy
                              the grit it takes to complete them and the exposure to nature refreshes me! When I am not practicing yoga or running in
                              the mountains, I am often traveling with my family exploring new places and meeting new people!
                          </p>
-                        <a href="files/ValerieCollins.pdf">Full Resume. All the Details</a>   
+                      <div class="r-link">
+                       <a href="files/ValerieCollins.pdf" target="_blank"> All the Details. Full Resume. </a> 
+                   </div>
                 </div>
 
-                <div class="row"><!--colum two-->
+                <div class="col-md-6"><!--colum two-->
                 <h2>Skills and Tools</h2>
-            <h3>My Skillset</h3>
+            <h3>My Skills</h3>
             <ul>
+                <li>UI Design</li>
                 <li>Adapability</li>
                 <li>Project Management</li>
                 <li>Active Listening</li>
@@ -72,13 +75,17 @@
                 <li>HTML and CSS</li>
             </ul>
         </div>
-        <div><!--colum two, row two-->
+        <div class="col-md-6"><!--colum two, row two-->
                 <h3> Tools in my Toolkit <i class="fa-solid fa-toolbox"></i></h3>
                 <ul>
                     <li>Figma</li>
                     <li>Adobe XD</li>
                     <li>InVision</li>
+                    <li>Balsamiq</li>
                     <li>Photoshop Express</li>
+                    <li>Visual Studio Code</li>
+                    <li>Code Pen</li>
+                    <li>GitHub</li>
                     </ul>
                 </div>
             </div>
@@ -111,8 +118,8 @@
         
      
 
-<p>Copyright @ Valerie Collins 2022</p>
-            </div>
+<p>Copyright Valerie Collins 2022</p>
+            
         </footer>
     </body>
 </html>
