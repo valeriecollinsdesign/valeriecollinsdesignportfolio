@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
   /*setting images to full width - responsive*/
   img {
       width: 100%;
-       border-radius: 02%;
+       border-radius: 2%;
   }
   /*change the default link to my secondary color*/
   a {
@@ -183,11 +183,11 @@ nav ul li .underline {
   
   nav ul li.active-link .underline {
     width: 100%;
-    background-color: #dcc7aa;
+    background-color: #6b7a8f;
   }
   
   nav ul li:hover .underline {
-    background-color: #dcc7aa;
+    background-color: #6b7a8f;
     width: 100%;
   }
   
@@ -226,6 +226,9 @@ nav ul li .underline {
   }
   #hero span {
     display: block;
+  }
+  #hero p {
+    text-align: center;
   }
   #work h1 {
     text-align: center;
@@ -344,10 +347,10 @@ nav ul li .underline {
 
   /* larger devices- 1024 px or bigger*/ 
 @media only screen and (min-width: 1024px){   
- .col-md-5 {
+ .col-lg-5 {
   width: 41.66% ;
   }
-.col-md-7 {
+.col-lg-7 {
   width: 58.33%;
 }
 .container {
