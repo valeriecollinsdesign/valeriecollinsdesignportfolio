@@ -20,25 +20,45 @@
 <!--header-->
         <header>
     <div class="container"><!--navigation--> 
-        <img class="logo" src="images/vc_logo_sample.png"  alt="Valerie Collins">
+        <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html">
+        <img  src="images/vc_logo_sample.png" class="logo" alt="Valerie Collins">
+            </a>
         <nav>
             <ul class="navigation">
-                <li class="nav-link active-link"><a href="index.html">Welcome</a><div class="underline"></div></li>     
-                    <li class="nav-active-link"><a href="aboutvaleriecollins.html">About</a><div class="underline"></div></li>
-                        <li class="nav-active-link"><a href="#contact">Contact</a><div class="underline"></div></li>
-            </ul> 
-             </nav> 
-            
-    </div>
-</header>
-
+                <li class="nav-link"><a href="index.html">Welcome</a><div class="underline"></div></li>     
+                    <li class="nav-link"><a href="aboutvaleriecollins.html">About</a><div class="underline"></div></li>
+                        <li class="nav-link active-link"><a href="#contact">Contact</a><div class="underline"></div></li>
+                        <li>
+                            <p id="click_advance"></p>
+                               <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <i class="fas fa-bars">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                 </nav> 
+                </div>
+            </div>
+    </header>
+    <a name="top"></a>
 <main>
 <div id="hero">
     <div class="container"> 
-      <h1> Hi, I'm Val!<span> I'm a UI designer based in Ft. Collins CO.</span></h1> 
+        <div class="row">
+            <div class="col-md-6 col-lg-5">
+      <h1> Hi, I'm Val! <span> I'm a UI designer based in Ft. Collins CO.</span></h1> 
       <p>When I am not designing you can find me doing yoga, or running in the mountains preparing for my next ultra marathon. 
       </p>
-      <img class="center" src="images/valeriecollins_resized.jpg" alt="Valerie Collins">
+      <p> Below I've featured a couple of my case studies from recent projects. Read on to learn more!</p>
+        
+      
+      </div>
+      <div class="col-md-6 col-lg -7">
+      <img  class="center"src="images/valeriecollins_resized.jpg" alt="Valerie Collins">
+    
+        </div>
+      </div>
     </div>
 </div>
 <!--first project-->
@@ -696,15 +716,13 @@
 </div>
 </div>
 
-
-    
-
+<a href="#top">Back to top</a>
 </main>
     <br>
         <footer id="contact">
         <div class="container">
             <h2>Lets chat!</h2>
-            <p>Do you want to chat and see if I would be a good fit for your team? If so, please reach out so we can chat!</p>
+            <p>If you think I would be a good fit for your team, please reach out so we can chat!</p>
             <p>Call or text me at:  <a href="tel:+970-443-2772">970-443-2772</a></p> 
            
              <p>Perfer email?</p>
@@ -728,6 +746,7 @@
 <p>Copyright Valerie Collins 2022</p>
 </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js/script.js"> </script>
 </body>
 </html>

@@ -14,28 +14,46 @@
 <body>
 <!--for the header-->
 <header>
-    <!--for the navigation-->
     <div class="container"><!--navigation--> 
-        <img class="logo" src="images/vc_logo_sample.png"  alt="Valerie Collins">
+        <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html">
+        <img  src="images/vc_logo_sample.png" class="logo" alt="Valerie Collins">
+            </a>
         <nav>
             <ul class="navigation">
-                <li class="nav-link active-link"><a href="index.html">Welcome</a><div class="underline"></div></li>     
-                    <li class="nav-active-link"><a href="aboutvaleriecollins.html">About</a><div class="underline"></div></li>
-                        <li class="nav-active-link"><a href="#contact">Contact</a><div class="underline"></div></li>
-            </ul> 
-             </nav> 
-</div>
-</header>
-
+                <li class="nav-link"><a href="index.html">Welcome</a><div class="underline"></div></li>     
+                    <li class="nav-link"><a href="aboutvaleriecollins.html">About</a><div class="underline"></div></li>
+                        <li class="nav-link active-link"><a href="#contact">Contact</a><div class="underline"></div></li>
+                        <li>
+                            <p id="click_advance"></p>
+                               <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <i class="fas fa-bars">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                 </nav> 
+                </div>
+            </div>
+    </header>
+    <a name="top"></a>
 <main> <!--content for first project-->
-    <div class="container">
-        <h2>Wanderlust</h2>
-        <picture>
-            <source srcset="images/wanderlust_firstpage.jpg" media="(max-width:767px)">
-            <img src="images/wanderlust_firstpage.jpg"  alt="My Image">
-        </picture>
-        <p> I designed this responsive app to help the wanderlust travler fill in the gap with using several different applications when planning a trip. Being that 
-            this is location based, you will be able to find the perfect spot and search for the best activities for you and your family!</p>
+    <div class="container"></div>
+    <h2>Wanderlust</h2>
+    <div class="row"><!--open row that holds 2 colums for project-->
+    <div class="col-md-6 col-lg-7"><!--open first colum - used for image-->
+    <picture> 
+        <source srcset="images/wanderlust_jpeg.jpg" media="(max-width:767px)">
+        <img src="images/wanderlust_jpeg.jpg"  alt="picture taken from a tent of the mountains">
+    </picture>
+</div>  <!--end first colum-->
+<div class="col-md-6 col-lg-5">
+         <!--heading for project-->
+    <p> Wanderlust is a part of who I am, and I wanted to create an app that helps fullfill that need. Enter Wanderlust. A responsive,
+        location based app that eleminates the need for additional planning tools, so that the focus can be on enjoying the trip. And not worrying
+        about where your itenerary went. <!--text that explains the project--></p>
+    
+
             Tools Used:
                 <ul>
                     <li>Adobde XD</li>
@@ -49,8 +67,9 @@
                         <li>Lean UX Principals</li>
                         <li>Resonsive Web Design</li>
                     </ul>
-                
-            <div>
+                </div>
+            </div>
+            <div class="container">
                 <picture>
                     <source srcset="images/wanderlust/homepage.jpg" media="(max-width:767px)">
                     <img src="images/wanderlust/homepage.jpg"  alt="before and after pictures of wandrlust Project">
@@ -148,8 +167,13 @@
                     </picture>
                 </div>
     </div>
-             
+</div>
+    <a href="#top">Back to top</a>      
 </main>
+
+<div id="moreReading">
+<div class="container"><p>Follow this link:  <a href="thezengarden.html">The Zen Gardener</a><!-- button or link label --> to read my other case study!</p></div>   
+</div>
 
 <!--for the footer-->
 <footer id="contact">
@@ -179,6 +203,7 @@
 <p>Copyright Valerie Collins 2022</p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="js/script.js"> </script>
     </body>
 </html>

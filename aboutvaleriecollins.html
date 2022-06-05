@@ -13,23 +13,35 @@
 </head>
 <body id="about-page">
 <!--for the header-->
-        <header>
-            <!--for the navigation-->
-            <div class="container"><!--navigation--> 
-                <img class="logo" src="images/vc_logo_sample.png"  alt="Valerie Collins">
-                <nav>
-                    <ul class="navigation">
-                        <li class="nav-link active-link"><a href="index.html">Welcome</a><div class="underline"></div></li>     
-                            <li class="nav-active-link"><a href="aboutvaleriecollins.html">About</a><div class="underline"></div></li>
-                                <li class="nav-active-link"><a href="#contact">Contact</a><div class="underline"></div></li>
-                    </ul> 
-                     </nav> 
-    </div>
-</header>
-
+<header>
+    <div class="container"><!--navigation--> 
+        <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html">
+        <img  src="images/vc_logo_sample.png" class="logo" alt="Valerie Collins">
+            </a>
+        <nav>
+            <ul class="navigation">
+                <li class="nav-link"><a href="index.html">Welcome</a><div class="underline"></div></li>     
+                    <li class="nav-link"><a href="aboutvaleriecollins.html">About</a><div class="underline"></div></li>
+                        <li class="nav-link active-link"><a href="#contact">Contact</a><div class="underline"></div></li>
+                        <li>
+                            <p id="click_advance"></p>
+                               <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <i class="fas fa-bars">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                 </nav> 
+                </div>
+            </div>
+    </header>
+    <a name="top"></a>
 <main>
     <div><!--for the header area-->
         <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-5">
             <h1>About Me</h1>
             </div>
             </div>
@@ -89,7 +101,8 @@
                     </ul>
                 </div>
             </div>
-        </div>             
+        </div>   
+        <a href="#top">Back to top</a>          
 </main>
 
 <!--for the footer-->
@@ -121,6 +134,7 @@
 <p>Copyright Valerie Collins 2022</p>
             
         </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="js/script.js"> </script>
     </body>
 </html>
