@@ -15,9 +15,6 @@ line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 color: #4a4a4a;
 }
 
-main {
-  padding: 133px;
-}
 
 h1, h2, h3, h4 {
     line-height: 1.4;
@@ -49,13 +46,50 @@ h1, h2, h3, h4 {
        border-radius: 5%;
   }
  
-  /*anchor links*/
+ 
   
-a {
-  color: #000;
-  text-decoration: underline;
-}
+/*back to top button*/
+  #button {
+    display: inline-block;
+    background-color:#4a4a4a;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: azure;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #6b7a8f;
+  }
+  #button:active {
+    background-color: #4a4a4a;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
 
+   /*anchor links*/
+   a {
+    color: #f7882f;
+   }
 a:hover,
 a:focus {
   color:black ;  
@@ -64,8 +98,8 @@ a:focus {
 .active a { 
   color: #6b7a8f;
 }
-
-a:active {  
+a
+:active {  
     color:antiquewhite;
 }
 
@@ -110,11 +144,12 @@ a:active {
     text-decoration: none
   }
   
+  
 
   header { /*styling the header elements */
     background-color: rgb(107, 122, 143, 1);
-    padding: 10px 0;
-    position: fixed;
+    padding: 10px 5px 15px 5px;
+    position:fixed;
     width: 100%;
     box-shadow: -2px 2px 5px grey;
   }
@@ -157,7 +192,7 @@ nav {
   .navtoggle li .icon {
     position: absolute;
     right: 0;
-    top: 2px;
+    top: 20px;
     font-size: 20px;
   }
 
@@ -186,7 +221,7 @@ nav {
   }
 
   .navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
+    padding: 0px 0 10px;
   }
 
   a.icon {
@@ -205,11 +240,23 @@ nav {
   }
 
   .container {
-    padding: 0 5px;
+    padding: 15px 15px;
+
+  }
+
+  main {
+    padding-top: 99px;;
+  
+  }
+
+  #hero {
+    display: inline-block;
+    width: 100%;
   }
 
   #hero h1 {
     text-align: center; 
+  
   }
 
   #hero span {
@@ -217,7 +264,7 @@ nav {
   }
 
   #hero p {
-    text-align: left;
+    text-align:left;
   }
 
 
@@ -239,12 +286,15 @@ nav {
 
 #work .row { 
   padding-bottom: 25px; border-bottom: 1px solid   rgb(107, 122, 143, 0.3); 
+ 
   }
 
   .row {
-    margin: 55px 0; /* 25px top and bottom, 2 left and right */
+    margin: 25px 0; /* 25px top and bottom, 2 left and right */
   
   }
+
+  
 
   #moreReading {
     text-align: center;
@@ -299,7 +349,7 @@ footer {
       100% {fill:#f76414;;}
     }
   
-    .sun{
+    .sun {
       animation: 4s color-change infinite alternate linear;
     }
    
