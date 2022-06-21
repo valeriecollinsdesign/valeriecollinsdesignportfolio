@@ -12,7 +12,7 @@ font-family: 'Open Sans', sans-serif;
 font-size: 18px; /* Sets the font size to 18px */
 font-weight: 300; /* Sets the font weight to 300 */
 line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-color: #4a4a4a;
+color: #1c1c1c;
 }
 
 
@@ -51,7 +51,7 @@ h1, h2, h3, h4 {
 /*back to top button*/
   #button {
     display: inline-block;
-    background-color:#4a4a4a;
+    background-color:#1c1c1c;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -72,11 +72,11 @@ h1, h2, h3, h4 {
     font-style: normal;
     font-size: 2em;
     line-height: 50px;
-    color: azure;
+    color: #FFFFFF;
   }
   #button:hover {
     cursor: pointer;
-    background-color: #6b7a8f;
+    background-color:#373767;
   }
   #button:active {
     background-color: #4a4a4a;
@@ -88,7 +88,7 @@ h1, h2, h3, h4 {
 
    /*anchor links*/
    a {
-    color: #f7882f;
+    color: black;
    }
 a:hover,
 a:focus {
@@ -106,13 +106,13 @@ a
 /*buttons*/
 .button {
     display: inline-block;
-    background-color: #d7cec7;
-    color: #6b7a8f;
+    background-color: #1c1c1c;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #565656;
+    border-bottom: 2px solid #1c1c1c;
     transition: 0.2s opacity;
 }
 
@@ -127,31 +127,30 @@ a
   }
 
   .button.contact:hover { /*button rules for the mailto button */
-      background-color: transparent;
+      background-color: #FFFFFF;
       color:azure;
       text-transform: uppercase;
       border: 2px solid;
   }
 
   .button.contact:hover {
-    background-color: #6b7a8f;
-    color: #dcc7aa
+    background-color: #FFFFFF;
+    color: #1c1c1c
   }
 
   .button.contact:active {
-    background-color: #6b7a8f;
-    color: azure;
+    background-color: #1c1c1c;
+    color: #FFFFFF;
     text-decoration: none
   }
   
   
 
   header { /*styling the header elements */
-    background-color: rgb(107, 122, 143, 1);
+    background-color: rgb(55, 55, 103, 1);
     padding: 10px 5px 15px 5px;
     position:fixed;
     width: 100%;
-    box-shadow: -2px 2px 5px grey;
   }
   
  .logo {
@@ -171,14 +170,14 @@ a
   }
 
   nav  ul  li  a {
-    color: #4a4a4a;
+    color: #1c1c1c;
     text-transform: uppercase;	
     font-weight: 700;
     padding: 0 15px;
     text-decoration: none;
   }
   nav  ul  li  a:visited {
-    color:azure;
+    color:#FFFFFF;
   }
 
 nav {
@@ -209,7 +208,7 @@ nav {
 }
 
   .navtoggle.responsive nav {
-    background-color:#6b7a8f;
+    background-color:#373767;
     margin-top: 25px;
     margin-bottom: -51%;;
   }
@@ -217,7 +216,7 @@ nav {
   .navtoggle.responsive li {
     display: block;
     padding:10px 0;
-    border-top: 1px solid azure;
+    border-top: 1px solid #FFFFFF;
   }
 
   .navtoggle.responsive li:last-child {
@@ -225,7 +224,7 @@ nav {
   }
 
   a.icon {
-    color: azure;
+    color: #FFFFFF;
   }
   #hero {
     padding: 20px 0;
@@ -310,8 +309,8 @@ nav {
  }
 
 footer {
-  background-color: rgb(107, 122, 143, 1);
-  color: azure;
+  background-color: rgb(55, 55, 103, 1);
+  color: #FFFFFF;
 }
  
    /*styling the social icons*/
@@ -333,7 +332,7 @@ footer {
     width: 50px;
     text-align: center;
     text-decoration: none;
-    color:azure
+    color:#FFFFFF
   }
 
     /* animation*/
@@ -355,16 +354,17 @@ footer {
    
     @keyframes cloud-move {
       from { transform: translate(0,50px);}
-      to {transform: translate:(200px, 50px);}
-      }
+      to {transform: translate;(200px, 50px);}
+      };
   
       .cloud-front {
         animation:  30s cloud-move infinite alternate linear;
       }
       @keyframes cloud-move-reverse {
         from {transform: translate(446px, 48px);}
-        to {transform: translate: (100px, 48px);}
-      }
+        to {transform: translate; (100px, 48px);}
+      };
+
       .cloud-back {
         animation:  34s cloud-move infinite alternate linear ;
       }
@@ -406,7 +406,7 @@ footer {
 
    nav > ul > li {
     display: inline-block;
-    float: right;
+     ;
  }
 
    .navtoggle li:not(:last-child) {
@@ -476,6 +476,6 @@ background-color: rgb(225, 255, 255, 0.76);
   }
 
   .r-link a {
-    color:#f7882f;
+    color:#373767;
     text-transform: uppercase;
   }
