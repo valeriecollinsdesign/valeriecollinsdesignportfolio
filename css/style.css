@@ -1,13 +1,13 @@
 /*colors used : 
 primary - apple core: hex -#dcc7aa, rgb - 220,199,170
 secondary - blueberry: hex- #6b7a8f, rgb - 107,122,143
-accent colors: apricot-  hex - # f7882f, rgb - 247,136,47 and oxblood - hex - #76323f */
+accent/text colors: #1c1c1c */
 * {
   box-sizing: border-box;
 }
 
 body {
-background-color: rgb(220, 199, 170, 0.4);
+background-color: rgb(220,199,170, .3);
 font-family: 'Open Sans', sans-serif;
 font-size: 18px; /* Sets the font size to 18px */
 font-weight: 300; /* Sets the font weight to 300 */
@@ -18,11 +18,13 @@ color: #1c1c1c;
 
 h1, h2, h3, h4 {
     line-height: 1.4;
+    padding-top: 30px;
   }
 
   h1 {
     font-size: 1.75em;
     font-weight: 700;
+    text-align: center;
   }
   
   h2 {
@@ -40,14 +42,89 @@ h1, h2, h3, h4 {
     font-weight: 400;
   }
 
-  /*setting images to full width - responsive*/
+ /* setting images to full width - responsive*/
   img {
       width: 100%;
-       border-radius: 5%;
+       border-radius: 10%;
+       vertical-align: middle;
   }
  
  
-  
+ 
+/* card styling on project page*/
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: rgb(220,199,170, .3);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #6b7a8f 40%, #1c1c1c 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
 /*back to top button*/
   #button {
     display: inline-block;
@@ -76,7 +153,7 @@ h1, h2, h3, h4 {
   }
   #button:hover {
     cursor: pointer;
-    background-color:#373767;
+    background-color:#1c1c1c;
   }
   #button:active {
     background-color: #4a4a4a;
@@ -88,11 +165,11 @@ h1, h2, h3, h4 {
 
    /*anchor links*/
    a {
-    color: black;
+    color: #1c1c1c;
    }
 a:hover,
 a:focus {
-  color:black ;  
+  color:#6b7a8f ;  
 }
 
 .active a { 
@@ -127,35 +204,36 @@ a
   }
 
   .button.contact:hover { /*button rules for the mailto button */
-      background-color: #FFFFFF;
-      color:azure;
+      background-color: #1c1c1c;
+      color:#6b7a8f;
       text-transform: uppercase;
       border: 2px solid;
   }
 
   .button.contact:hover {
-    background-color: #FFFFFF;
-    color: #1c1c1c
+    background-color: #6b7a8f;
+    color: #FFFFFF
   }
 
   .button.contact:active {
     background-color: #1c1c1c;
-    color: #FFFFFF;
+    color: #1c1c1c;
     text-decoration: none
   }
   
   
 
   header { /*styling the header elements */
-    background-color: rgb(55, 55, 103, 1);
+    background-color: #6b7a8f;
     padding: 10px 5px 15px 5px;
     position:fixed;
     width: 100%;
+    z-index: 1;
   }
   
  .logo {
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   max-width: 150px;
  }
 
@@ -177,7 +255,7 @@ a
     text-decoration: none;
   }
   nav  ul  li  a:visited {
-    color:#FFFFFF;
+    color:#1c1c1c;
   }
 
 nav {
@@ -208,7 +286,7 @@ nav {
 }
 
   .navtoggle.responsive nav {
-    background-color:#373767;
+    background-color:#6b7a8f;
     margin-top: 25px;
     margin-bottom: -51%;;
   }
@@ -216,7 +294,7 @@ nav {
   .navtoggle.responsive li {
     display: block;
     padding:10px 0;
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #1c1c1c;
   }
 
   .navtoggle.responsive li:last-child {
@@ -224,7 +302,7 @@ nav {
   }
 
   a.icon {
-    color: #FFFFFF;
+    color: #1c1c1c;
   }
   #hero {
     padding: 20px 0;
@@ -239,7 +317,7 @@ nav {
   }
 
   .container {
-    padding: 15px 15px;
+    padding: 15px 15px 15px 15px;
 
   }
 
@@ -271,37 +349,27 @@ nav {
     text-align: center;
   }
 
+  #work h2 {
+    text-align: center;
+  } 
+
 #work h3 {
   padding: 10px;
 }
 
- #work h2 {
-   text-align: center;
- } 
 
-#work p {
-  padding-left: 20px;
-}
-
-#work .row { 
-  padding-bottom: 25px; border-bottom: 1px solid   rgb(107, 122, 143, 0.3); 
- 
-  }
 
   .row {
-    margin: 25px 0; /* 25px top and bottom, 2 left and right */
-  
+    margin: 25px 100px;
+    padding-bottom: 25px; border-bottom: 1px solid   rgb(28,28,28, .3);
+   /* 25px top and bottom, 2 left and right */
   }
 
-  
 
-  #moreReading {
-    text-align: center;
-  }
 /* footer styling */
-
-#contact {
+footer {
   text-align: center;
+  padding: 100px;
 }
 
  footer p {
@@ -309,8 +377,7 @@ nav {
  }
 
 footer {
-  background-color: rgb(55, 55, 103, 1);
-  color: #FFFFFF;
+  color: #1c1c1c;
 }
  
    /*styling the social icons*/
@@ -332,43 +399,147 @@ footer {
     width: 50px;
     text-align: center;
     text-decoration: none;
-    color:#FFFFFF
+    color:#1c1c1c
   }
 
+ 
+.text {
+  box-sizing: border-box;
+  float: left;
+  margin-left: -100%;
+  padding: 2em;
+  width: 100%;
+}
+
+.text {
+  border: 1px solid #1c1c1c;
+}
+
+
     /* animation*/
-    #about-picture {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-    }
-  
-    @keyframes color-change {
-     0% {fill: #edc655;}
-      50% { fill: #fcffad;;}
-      100% {fill:#f76414;;}
-    }
-  
-    .sun {
-      animation: 4s color-change infinite alternate linear;
-    }
-   
-    @keyframes cloud-move {
-      from { transform: translate(0,50px);}
-      to {transform: translate;(200px, 50px);}
-      };
-  
-      .cloud-front {
-        animation:  30s cloud-move infinite alternate linear;
-      }
-      @keyframes cloud-move-reverse {
-        from {transform: translate(446px, 48px);}
-        to {transform: translate; (100px, 48px);}
-      };
 
-      .cloud-back {
-        animation:  34s cloud-move infinite alternate linear ;
+    #big-wheel {
+      animation: wheel 12s linear infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+
+@keyframes wheel {
+  from {
+    transform: rotateZ(360deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+#cabins {
+  animation: cabins 5s linear infinite;
+  transform-origin: top;
+  
+}
+
+@keyframes cabins {
+  0%,
+  100% {
+  transform: rotate(2deg);
+  }
+  50% {
+  transform: rotate(-2deg);
+    } 
+  }
+
+  #tree-left, 
+  #tree-right {
+    animation: tree 3s linear infinite;
+    transform-origin: bottom;
+    transform-box: fill-box ;
+    
+    
+  }
+  
+  @keyframes tree {
+    0%,
+    100% {
+    transform: rotate(2deg);
+    }
+    50% {
+    transform: rotate(-2deg);
+      } 
+    }
+  
+    #ballon-man {
+      animation: ballon-man 3s linear infinite;
+      transform-box: fill-box ;
+      
+      
+    }
+    
+    @keyframes ballon-man {
+      0%,
+      100% {
+      transform: translatex(10px);
+      }
+      50% {
+      transform: translateX(0px);
+        } 
       }
 
+      #person-walking {
+        animation: person-walking 3s linear infinite;
+        transform-box: fill-box ;
+        
+        
+      }
+      
+      @keyframes person-walking {
+        0%,
+        100% {
+        transform: translatex(-20px);
+        }
+        50% {
+        transform: translateX(0px);
+          } 
+        }
+
+
+        #ballons {
+          animation: ballons 3s linear infinite;
+          transform-box: fill-box ;
+          transform-origin: bottom;
+          
+          
+        }
+        
+        @keyframes ballons {
+          0%,
+          100% {
+          transform: rotate(3deg);
+          }
+          50% {
+          transform:  rotate(-3deg);
+          transform: scale(1);
+            } 
+          }
+  
+
+/*styling for the columns -skills/tools-  on about page*/
+
+         .rows {
+            padding-top: 10px;
+             border-bottom: 1px solid   rgb(28,28,28, .3);
+            
+          }
+
+.column {
+  float:left;
+  width: 50%;
+  padding: 1rem;
+  height: 300px;
+ 
+}
+
+ 
  /* media queries*/
 /*clear page flow*/
 .row::after {
@@ -396,13 +567,15 @@ footer {
      float: right;
    }
 
+   
+
    .col-md-6 {
     width: 50%;
     float: left;
     padding-bottom: 40px;
   }
 
-   #about-page h3 { margin-top: 0;}
+ 
 
    nav > ul > li {
     display: inline-block;
@@ -418,8 +591,12 @@ footer {
 }
   }
 
+  
+
   /* larger devices- 1024 px or bigger*/ 
-@media only screen and (min-width: 1024px){   
+@media only screen and (min-width: 1024px){
+
+ }
 
     
  
@@ -438,6 +615,18 @@ footer {
   float: left;
   padding-bottom: 40px;
 }
+/* for the image on about page to make responsive*/
+@media only screen and (min-width: 1024px){
+  .left-text {
+      padding: 50px;
+      width: 50%;
+  }
+  .right-image{
+      width: 50%;
+      border-radius: 0%;
+      float: right;
+  }
+  
 
 /* navbar with animated underlines - found in codepen- not in CF*/
  
@@ -451,11 +640,11 @@ nav ul li .underline {
 
 nav ul li.active-link .underline {
   width: 100%;
-  background-color: azure;
+  background-color: #1c1c1c;
 }
 
 nav ul li:hover .underline {
-background-color: azure;
+background-color: #1c1c1c;
 width: 100%;
 }
 
@@ -475,7 +664,88 @@ background-color: rgb(225, 255, 255, 0.76);
   @media only screen and (min-width: 1440px){   
   }
 
-  .r-link a {
-    color:#373767;
-    text-transform: uppercase;
+  
+
+/* Simple fallback for browsers that don't support display:grid  for message app page*/
+.grid {
+  max-width: 40rem; 
+  padding:0 1.5rem;
+  display:block; margin:auto;
+}
+.grid > * { margin: .75rem 0; }
+
+@supports (display: grid) {
+  .grid *  { grid-column: md; }
+  .grid .alignfull { grid-column: xl; text-align:center; }
+  .grid .alignwide { grid-column: l; text-align:center; }
+  .grid .grid { margin:0; }
+  .grid {
+    display: grid; margin:unset; max-width: unset; padding: unset; 
+        grid-template-columns: 
+      [xl-start] 1fr [l-start] 1.5rem 1fr [md-start] minmax(200px,40rem) [md-end] 1fr 1.5rem [l-end] 1fr [xl-end];
   }
+  
+}
+/*
+xl-start               l-start            md-start                              md-end             l-end           xl-end
+                                          +-------------------------------------+
+                                          |                                     |
+                                          +-------------------------------------+           
+                       +---------------------------------------------------------------------------+
+                       |                                                                           |
+                       |                                .alignwide                                 |
+                       |                                                                           |
+                       |                                                                           |
+                       |                                                                           |
+                       |                                                                           |
+                       |                                                                           |
+                       |                                                                           |
+                       +---------------------------------------------------------------------------+
+xl-start               l-start            md-start                              md-end             l-end           xl-end
+                                          +-------------------------------------+
+                                          |                                     |
+                                          +-------------------------------------+
+                                          +-------------------------------------+
+                                          |                                     |
+                                          +-------------------------------------+
+                                          +-------------------------------------+
+                                          |                                     |
+                                          +-------------------------------------+                                 
++--------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                          |
+|                                                       .alignfull                                                         |
+|                                                                                                                          |
+.                                                                                                                          .
+.                                                                                                                          .
+.                                                                                                                          .
+|                                                                                                                          |
+|                                                                                                                          |
+|                                                                                                                          |
++--------------------------------------------------------------------------------------------------------------------------+ 
+xl-start               l-start            md-start                              md-end             l-end           xl-end
+                                          +-------------------------------------+
+                                          |                                     |
+                                          +-------------------------------------+
+                                          +-------------------------------------+
+                                          |                                     |
+                                          +-------------------------------------+
+xl-start               l-start            md-start                              md-end             l-end           xl-end
+*/
+
+
+/** Should not be needed if using any type of reset CSS: **/
+/**/
+  .grid img {
+    max-width: 100%;
+  }
+/**/
+figure {
+  margin:0;
+}
+body {
+  margin:0;
+}
+/**/
+/** CSS Debugger **
+  *:not(path) { outline:solid 4px rgba(10,10,200,.25)}
+/**/
