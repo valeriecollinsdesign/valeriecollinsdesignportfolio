@@ -45,7 +45,6 @@ h1, h2, h3, h4 {
  /* setting images to full width - responsive*/
   img {
       width: 100%;
-       border-radius: 10%;
        vertical-align: middle;
   }
  
@@ -169,15 +168,15 @@ h1, h2, h3, h4 {
    }
 a:hover,
 a:focus {
-  color:#6b7a8f ;  
+  color:black ;  
 }
 
 .active a { 
-  color: #6b7a8f;
+  color: #FFFFFF;
 }
 a
 :active {  
-    color:antiquewhite;
+    color:black;
 }
 
 /*buttons*/
@@ -316,11 +315,11 @@ nav {
     float: right;
   }
 
-  .container {
+ .container {
     padding: 15px 15px 15px 15px;
 
   }
-
+  
   main {
     padding-top: 99px;;
   
@@ -362,14 +361,14 @@ nav {
   .row {
     margin: 25px 100px;
     padding-bottom: 25px; border-bottom: 1px solid   rgb(28,28,28, .3);
-   /* 25px top and bottom, 2 left and right */
+    padding-top: 50px;
   }
 
 
 /* footer styling */
 footer {
   text-align: center;
-  padding: 100px;
+  padding-top: 100px;
 }
 
  footer p {
@@ -596,7 +595,7 @@ footer {
   /* larger devices- 1024 px or bigger*/ 
 @media only screen and (min-width: 1024px){
 
- }
+ 
 
     
  
@@ -615,6 +614,7 @@ footer {
   float: left;
   padding-bottom: 40px;
 }
+}
 /* for the image on about page to make responsive*/
 @media only screen and (min-width: 1024px){
   .left-text {
@@ -628,7 +628,7 @@ footer {
   }
   
 
-/* navbar with animated underlines - found in codepen- not in CF*/
+/* navbar with animated underlines*/
  
 nav ul li .underline {
   height: 3px;
